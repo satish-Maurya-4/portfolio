@@ -1,0 +1,62 @@
+@include media-md {
+  .menu-btn {
+    display: none;
+  }
+
+  .nav {
+    visibility: visible;
+    transform: translateY(0);
+
+    .menu-nav {
+      // display: block;
+      height: auto;
+      background: transparent;
+      flex-flow: row nowrap;
+      justify-content: flex-end;
+      padding: 1rem 2rem 1rem 0;
+
+      &__item {
+        transform: translateX(0);
+        margin-left: 2rem;
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .about {
+    p {
+      font-size: 1.2rem;
+    }
+  }
+  .jobs__job {
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  .projects {
+    &__image {
+      height: 60vh;
+    }
+
+    &__items {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .contact__list{
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@include media-lg {
+  .projects {
+    &__image {
+      height: 60vh;
+    }
+
+    &__items {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
